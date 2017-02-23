@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+    <title>American Heart Association</title>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="mystylesheet.css" type="text/css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+<body>
+    
+     <div class="wrapper">
+        <div class="nav"><img class="logo" src="AHALogo.png"></div>
+    <nav class="top-nav">
+            <a href="#" class="menu-toggle"></a>
+            <ul>
+                <li><a href="index.html" class="menu-item">Home</a></li>
+                <li><a href="about.html" class="menu-item">About Us</a></li>
+                <li><a href="history.html" class="menu-item">History</a></li>
+                <li><a href="donate.html" class="menu-item">Donate</a></li>
+                <p class="icon"><a href="https://www.facebook.com/AmericanHeart/"><i class="fa fa-facebook" aria-hidden="true" style="color:black;"></i></a><br>
+                <a href="https://twitter.com/american_heart"><i class="fa fa-twitter" aria-hidden="true" style="color:black; font-size: 25px;"></i></a><br>
+                <a href="https://www.youtube.com/americanheart"><i class="fa fa-youtube-play" aria-hidden="true" style="color:black; font-size: 25px;"></i></a>
+            </p>
+            </ul>
+            <div class="closer"></div>
+        </nav>
+        
+    <div class="pageText"><h2>History of the American Heart Association</h2>
+
+        <p>Before the American Heart Association existed, people with heart disease were considered to be doomed to complete bed rest &#45; or worse. But a handful of pioneering physicians and social workers believed it didn&#39;t have to be that way. They conducted studies to learn more about heart disease, eventually leading to the founding of the American Heart Association in 1924.</p>
+
+        <p>&#34;We were living in a time of almost unbelievable ignorance about heart disease,&#34; said Paul Dudley White, one of six cardiologists who founded the organization.</p>
+
+        <p>The early American Heart Association enlisted help from hundreds, then thousands, of physicians and scientists. The association reorganized in 1948, transforming from a scientific society to a voluntary health organization composed of both science and lay volunteers and supported by professional staff. Since then, the American Heart Association has grown rapidly in size and influence &#45; nationally and internationally.</p>
+
+        <p>In 1975, the headquarters moved from New York City to Dallas to be more centrally located. Volunteer-led affiliates formed a national network of local organizations providing research funding, education, community programs and fundraising.</p>
+
+        <p>In the 1980s, the association became a much more visible champion of public health, starting advocacy efforts that remain active today locally across America in all 50 states and in Washington D.C. Large gifts allowed the association to support new research projects and education programs, including more efforts to address heart disease and stroke in women and minorities.</p>
+
+        <p>The 1990s were a time of great change. In 1997, the confederation of separately incorporated affiliates merged into a single corporation. That year the American Heart Association also created the American Stroke Association and another division dedicated to CPR training and other emergency cardiac care.</p>
+
+        <p>Our scientific findings began to move from laboratories and clinics to physician&#39;s offices and American households. The association took positions on important health issues. And despite strong opposition from the tobacco industry, the American Heart Association continued to advocate for the public, especially children.</p>
+
+        <p>By 2000, the American Heart Association had established its first 10-year Impact Goal for the entire nation: to reduce coronary heart disease, stroke and risk factors by 25 percent by 2010.</p>
+
+        <p>The goals for reducing deaths were exceeded. However, with national trends such as increasing obesity and sedentary lifestyles, we still had much more work to reduce risks. And that drove the association to set another aggressive 10-year Impact Goal for the nation: To improve the cardiovascular health of the entire nation by 20 percent by 2020, while reducing deaths from cardiovascular diseases and stroke by 20 percent.</p>
+
+        <p>Today, the American Heart Association works toward that goal as the nation&#39;s oldest and largest voluntary health organization devoted to fighting heart disease and stroke. We have more than 22.5 million volunteers and supporters supported by nearly 150 local offices.</p>
+
+        <p>The association is a leader in public health education and science. We train more than 13 million people a year in CPR. We publish popular cookbooks and certify heart-healthy foods in grocery stores. Our programs improve the health of America, fight childhood obesity and reach audiences facing unique health risks, including women, African-Americans and Hispanics.</p>
+
+        <p>The association continues to be true to its scientific roots, funding more cardiovascular research than any U.S. organization aside from the government. We have funded 13 Nobel Prize winners and numerous scientific breakthroughs. Our conferences train thousands of healthcare professionals, and we set scientific treatment guidelines followed by hospitals nationwide.</p>
+
+        <p>The American Heart Association wants everyone to understand the threat &#45; and to know that cardiovascular diseases are largely preventable.  Risks can be lowered by adhering to what we call Life&#39;s Simple 7: not smoking, being physically active, maintaining a healthy body weight, eating a healthy diet, controlling blood pressure, controlling cholesterol and controlling blood sugar.</p></div>
+  
+                <br><br><br><footer>
+        <div class="rightfooter"><p><b>Address</b>
+                                    <br>7272 Greenville Ave.
+                                    <br>Dallas, TX 75231</p>
+                                </div>
+        <div class="leftfooter"><p><b>Customer Service</b>
+                                    <br>1-800-AHA-USA-1
+                                    <br>1-800-242-8721
+                                    <br>1-888-474-VIVE</p></div>
+        </footer>
+
+    </div>
+
+
+  <script>
+        $(document).ready(function () {
+
+            $.fn.openToggle = function () {
+                $(".top-nav").toggleClass("open");
+                $(".menu-toggle").toggleClass("open");
+            }
+
+            console.log("Geronimo!");
+
+            $(".menu-toggle").click(function () {
+                $.fn.openToggle();
+            });
+
+            $(".menu-item").click(function () {
+                $.fn.openToggle();
+            });
+
+            $(".closer").click(function () {
+                $.fn.openToggle();
+            });
+
+        });
+    </script>
+</body>
+</html>

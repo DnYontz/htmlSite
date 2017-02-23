@@ -1,0 +1,287 @@
+*{
+    box-sizing: border-box;
+}
+
+html {
+            height: 100%;
+        }
+
+body{
+    margin: 0;
+    background-color: #cccccc;
+    font-family: verdana, arial, sans-serif;
+    height: 100%;
+    position:fixed;
+    width:100vw;
+    overflow-x:hidden;
+    overflow-y: auto;
+}
+.logo{
+    height: 100px;
+    width: 200px;
+}
+.wrapper{
+    padding: 10px;
+    width: 75%;
+    height: 100%;
+    overflow-x:hidden;
+    margin: auto;
+    background-color: white;
+ }
+.top-nav ul{
+    list-style-type: none;
+    margin: 0, 0, 20px,0;
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 10px solid #AA0C1A;
+/*    background-color: #AA0C1A;*/
+    
+}
+
+.top-nav li a{
+    display: block;
+    color: black;
+    font-size: 15px;
+    font-family: verdana;
+    text-decoration: none;
+    padding: 14px 16px;
+    text-transform: uppercase;
+}
+.top-nav li{
+    float: left;
+    display: inline;
+}
+.top-nav li a:hover{
+    color: #AA0C1A;
+}
+
+h1,
+h2, h3{
+    font-family: 'Slabo 27px' , serif;
+    align-content: center;
+    text-align: center;
+}
+
+.button {
+    background-color: #AA0C1A;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin: auto;
+    width: 100px;
+    font-family: 'Slabo 27px', serif;
+    font-style: bold;
+}
+footer{
+    display: block;
+    background-color: #AA0C1A;
+    width: 100%;
+    overflow: auto;
+    position: relative;
+    font-size: 15px;
+}
+
+p.icon{
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    float: right;
+    padding-bottom: 5px;
+}
+.rightfooter{
+    margin-left: auto;
+    margin-right: auto;
+    float: right;
+    padding: 20px;
+}
+.leftfooter{
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+    padding: 20px;
+}
+
+#search{
+    display: block;
+    padding: 25px;
+}
+.pageText{
+    padding: 20px;
+    
+}
+/* animation for the search bar */
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 100%;
+}
+/* end animation for search bar */
+
+/* ACCORDIAN STYLES  ------------------------- */
+
+#flip, #flipTwo, #flipThree, #flipFour{
+background-color: #cccccc;
+text-align: center;
+padding: 5px;
+border: solid 1px #c3c3c3;
+}
+#panelOne, #panelTwo, #panelThree, #panelFour {
+    padding: 5px;
+    text-align: center;
+    background-color: white;
+    border: solid 1px #c3c3c3;
+}
+
+#panelOne, #panelTwo, #panelThree, #panelFour {
+    display: none;
+}
+
+#accordian{
+width: 75%;
+margin-right: auto;
+margin-left: auto;
+}
+
+.menu-toggle {
+        display: none;
+        }
+#heartImage{
+    width: 100%;
+/*    height: 150px;*/
+    display: block;
+    padding: 10px;
+}
+
+
+/* MEDIA QUERY START ----------------------------------------------------------    */
+
+@media screen 
+    and (max-device-width: 400px) {
+        .wrapper{
+            width:100vw;
+            height:100vh;
+            overflow-x:hidden;
+        }
+        body{
+            margin: auto;
+        }
+        .button {
+            width: 70%;
+            max-width: 300px;
+        }
+        footer{
+            display: block;
+        }
+        .rightfooter, .leftfooter{
+            float: none; /* clears the floats from the desktop site */
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        h1{
+        margin-right: auto;
+        margin-left: auto;
+        font-family: 'Slabo 27px', serif;
+       }
+        .logo{
+        margin-right: auto;
+        margin-left: auto;
+        padding: 10px;
+        width: 50%;
+       }
+/*  ADDS RED BLOCK AT THE TOP WITH THE LOGO FOR THE MOBILE MENU -----------     */
+        .nav{
+        width: 100%;
+        background-color: #AA0C1A;
+       }
+/*  YOUTUBE VIDEO ---------------------------------------      */
+         iframe{
+           width: 100%;
+           padding: 10px;
+       }
+        
+/*  MENU FOR MOBILE SITE --------------------------------------------------------      */
+            .top-nav li a,
+            .top-nav li a:link,
+            .top-nav li a:visited,
+            .top-nav li a:hover,
+            .top-nav li a:active {
+                padding-left: 20px;
+            }
+            .top-nav {
+                position: absolute;
+                right: -113%;
+                top: 0;
+                transition: all 400ms ease-in-out;
+                width: 100%;
+                height: 100%;
+                padding: 10px;
+                z-index: 10;
+                background: white;
+            }
+            .top-nav ul {
+                opacity: 0;
+                padding: 0;
+                margin: 0;
+                transition: all 1s ease-out;
+            }
+            .top-nav.open ul {
+                opacity: 1;
+                width: initial;
+            }
+            .top-nav li {
+                display: block;
+                margin: 2px 0 2px 0;
+                padding: 2px 0 0 0;
+                width: 100%;
+            }
+            .menu-toggle {
+                margin-left: -49px; /* positioning of the menu button */
+                margin-top: 11px;   /* here too */
+                transition: all 400ms ease-in-out;
+                padding-bottom: 20px;
+                display: inline-block;
+                position: relative;
+            }
+        .menu-toggle:link, .menu-toggle:visited, .menu-toggle:hover, .menu-toggle:active{
+            color: black;
+        }
+            .menu-toggle::after {
+                content: '\f0c9';
+                font-family: FontAwesome;
+                display: block;
+                width: 24px;
+                height: 24px;
+                position: absolute;
+                right: 30px;
+                top: 0;
+            }
+            .menu-toggle.open {
+                margin-left: 18px;
+                width: 100%;
+            }
+            .menu-toggle.open::after {
+                content: '\f00d';
+                right: 97.5%;
+            }
+            .top-nav.open {
+                right: 0;
+            }
+        
+}

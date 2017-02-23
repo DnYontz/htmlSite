@@ -1,0 +1,228 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+/*    background:rgba(0,0,0,.25);*/
+    font-family: georgia;
+    height: 100%;
+    background-color: gray;
+}
+.logo{
+    height: 75px;
+    width: 150px;
+}
+.top-nav {
+    
+}
+
+html {
+    height: 100%;
+        }
+.wrapper{
+    padding: 10px;
+    width: 75%;
+    overflow-x:hidden;
+    margin: auto;
+    background-color: white;
+ }
+
+h1{
+    background-color: #AA0C1A;
+    margin-right: auto;
+    font-family: 'Slabo 27px', serif;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+}
+h2{
+    font-family: 'Slabo 27px', serif;
+    font-style: bold;
+    color: #AA0C1A;
+}
+.button {
+    background-color: #AA0C1A;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin: auto;
+    width: 100px;
+    font-family: 'Slabo 27px', serif;
+    font-style: bold;
+}
+.redtext{
+    color: #AA0C1A;
+}
+.logo{
+    align-content: center;
+    clear: right;
+}
+.icon{
+    color:black;
+    font-size: 25px;
+}
+                
+        .menu-toggle {
+            display: none; /* makes it so the menu doesnt show in desktop mode */
+        }
+    
+        
+        .menu-toggle:link,
+        .menu-toggle:visited,
+        .menu-toggle:hover,
+        .menu-toggle:active {
+            color: black;
+            text-decoration: none;
+        }
+        
+        
+        .top-nav .closer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: aqua;
+        }
+        .footer{
+            display: block;
+            background-color: #AA0C1A;
+            widows: 100%;
+            
+        }
+
+@media screen 
+  and (max-device-width: 400px) 
+   {
+       body{
+           background:lightgrey;
+            margin: auto;
+           
+        
+       }
+       .button {
+            width: 70%;
+            max-width: 300px;
+        }
+       h1{
+        margin-right: auto;
+        margin-left: auto;
+        font-family: 'Slabo 27px', serif;
+        text-align: center;
+       }
+       .logo{
+        margin-right: auto;
+        margin-left: auto;
+        padding: 10px;
+        width: 50%;
+       }
+       .nav{
+        width: 100%;
+        background-color: #AA0C1A;
+       }
+       iframe{
+           width: 100%;
+           padding: 10px;
+       }
+                   .top-nav li a,
+            .top-nav li a:link,
+            .top-nav li a:visited,
+            .top-nav li a:hover,
+            .top-nav li a:active {
+                padding-left: 20px;
+            }
+            .top-nav {
+                right: -113%;
+                top: 0;
+                transition: all 400ms ease-in-out;
+                width: 100%;
+                height: 100%;
+                padding: 10px;
+                z-index: 10;
+                position: absolute;
+            }
+            .top-nav ul {
+                opacity: 0;
+                padding: 0;
+                margin: 0;
+                transition: all 1s ease-out;
+            }
+            .top-nav.open ul {
+                opacity: 1;
+                width: initial;
+            }
+            .top-nav li {
+                display: block;
+                margin: 2px 0 2px 0;
+                padding: 2px 0 0 0;
+                width: 100%;
+            }
+            .menu-toggle {
+                    margin-left: -132px;
+                    transition: all 400ms ease-in-out;
+                    padding-bottom: 20px;
+                    display: inline-block;
+                    position: relative;
+                    top: 20px;
+            }
+            .menu-toggle::after {
+                content: '\f0c9'; /* character code */
+                font-family: FontAwesome;
+                display: block;
+                width: 24px;
+                height: 24px;
+                position: absolute;
+                right: 33px;
+                top: 0;
+            }
+            .menu-toggle.open {
+                margin-left: 82%;
+                width: 100%;
+            }
+            .menu-toggle.open::after {
+                content: '\f00d';
+                right: 97.5%;
+            }
+            .top-nav.open {
+                right: 0;
+            }
+}
+  
+
+
+
+
+
+
+
+
+@media screen and (max-device-width: 375px) {
+
+        }
+        
+/*
+        @media screen 
+  and (min-device-width: 400px) and (orientation: landscape)  
+   {
+       body{
+           background:lightgrey;
+       }
+}
+*/
+        
+/*
+        @media screen 
+  and (min-device-width: 800px) 
+   {
+       .desktop-hide{display:none;}
+}*/
+
+

@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+    <title>Donate</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="mystylesheet.css" type="text/css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+<body>
+    
+      <div class="wrapper">
+        <div class="nav"><img class="logo" src="AHALogo.png"></div>
+<nav class="top-nav">
+            <a href="#" class="menu-toggle"></a>
+            <ul>
+                <li><a href="index.html" class="menu-item">Home</a></li>
+                <li><a href="about.html" class="menu-item">About Us</a></li>
+                <li><a href="history.html" class="menu-item">History</a></li>
+                <li><a href="donate.html" class="menu-item">Donate</a></li>
+                <p class="icon"><a href="https://www.facebook.com/AmericanHeart/"><i class="fa fa-facebook" aria-hidden="true" style="color:black;"></i></a><br>
+                <a href="https://twitter.com/american_heart"><i class="fa fa-twitter" aria-hidden="true" style="color:black; font-size: 25px;"></i></a><br>
+                <a href="https://www.youtube.com/americanheart"><i class="fa fa-youtube-play" aria-hidden="true" style="color:black; font-size: 25px;"></i></a>
+            </p>
+            </ul>
+            <div class="closer"></div>
+        </nav>
+          <img id="heartImage" src="images/savingLives.jpg">
+    <h1>Donate to Us!</h1>
+<div class="pageText">Life is why the American Heart Association exists.
+
+          For the littlest baby and the oldest grandparent, you can change and even save their life. With your donation today, you are why families will stay together after heart disease threatens to tear them apart.</div>
+          
+          <br><br><a href="donate.html" class="button">CLICK HERE TO DONATE</a>
+          
+                 <br><br><br><footer>
+        <div class="rightfooter"><p><b>Address</b>
+                                    <br>7272 Greenville Ave.
+                                    <br>Dallas, TX 75231</p>
+                                </div>
+        <div class="leftfooter"><p><b>Customer Service</b>
+                                    <br>1-800-AHA-USA-1
+                                    <br>1-800-242-8721
+                                    <br>1-888-474-VIVE</p></div>
+        </footer>
+    
+    </div>
+    
+     <script>
+        $(document).ready(function () {
+
+            $.fn.openToggle = function () {
+                $(".top-nav").toggleClass("open");
+                $(".menu-toggle").toggleClass("open");
+            }
+
+            console.log("Geronimo!");
+
+            $(".menu-toggle").click(function () {
+                $.fn.openToggle();
+            });
+
+            $(".menu-item").click(function () {
+                $.fn.openToggle();
+            });
+
+            $(".closer").click(function () {
+                $.fn.openToggle();
+            });
+
+        });
+    </script>
+</body>
+</html>

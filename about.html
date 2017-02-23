@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+    <title>American Heart Association</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="mystylesheet.css" type="text/css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+<body>
+    
+     <div class="wrapper">
+        <div class="nav"><img class="logo" src="AHALogo.png"></div>
+         
+    <nav class="top-nav">
+            <a href="#" class="menu-toggle"></a>
+            <ul>
+                <li><a href="index.html" class="menu-item">Home</a></li>
+                <li><a href="about.html" class="menu-item">About Us</a></li>
+                <li><a href="history.html" class="menu-item">History</a></li>
+                <li><a href="donate.html" class="menu-item">Donate</a></li>
+                <p class="icon"><a href="https://www.facebook.com/AmericanHeart/"><i class="fa fa-facebook" aria-hidden="true" style="color:black;"></i></a><br>
+                <a href="https://twitter.com/american_heart"><i class="fa fa-twitter" aria-hidden="true" style="color:black; font-size: 25px;"></i></a><br>
+                <a href="https://www.youtube.com/americanheart"><i class="fa fa-youtube-play" aria-hidden="true" style="color:black; font-size: 25px;"></i></a>
+            </p>
+            </ul>
+            <div class="closer"></div>
+        </nav>
+         
+         <img id="heartImage" src="images/human-heart-facts.jpg">
+        
+<h3 style="font-size:30px; position: center;">About the American Heart Association</h3>
+        
+<div id="accordian">
+<div id="flip">Who We Are</div>
+    <div id="panelOne"><p>The American Heart Association is the nation&#39;s oldest and largest voluntary organization dedicated to fighting heart disease and stroke. Founded by six cardiologists in 1924, our organization now includes more than 22.5 million volunteers and supporters. We fund innovative research, fight for stronger public health policies, and provide critical tools and information to save and improve lives. Our nationwide organization includes 156 local offices and more than 3,000 employees. We moved our national headquarters from New York to Dallas in 1975 to be more centrally located. The American Stroke Association was created as a division in 1997 to bring together the organization&#39;s stroke-related activities.</p></div>
+
+<div id="flipTwo">What We Do</div>
+<div id="panelTwo"><p>To improve the lives of all Americans, we provide public health education in a variety of ways. We	&#39;re the nation	&#39;s leader in CPR education training. We help people understand the importance of healthy lifestyle choices. We provide science-based treatment guidelines to healthcare professionals to help them provide quality care to their patients. We educate lawmakers, policymakers and the public as we advocate for changes to protect and improve the health of our communities. Our volunteer experts select scientific research most worthy of funding &#45; with great results. The association has funded more than $3.8 billion in heart disease and stroke research, more than any organization outside the federal government.</p></div>
+
+<div id="flipThree">Why We&#39;re Needed</div>
+    <div id="panelThree"><p>Heart disease is the No. 1 killer in the world. Stroke ranks second globally and is a leading cause of severe disability. Too many families are losing loved ones of all ages. Each year, these diseases kill more than 786,000 Americans, which is larger than the population of several states (Alaska, North Dakota, Vermont and Wyoming). Some form of cardiovascular disease affects more than one in every three adult Americans. Many suffer terribly from disabilities caused by these diseases. The American Heart Association wants everyone to understand the threat &#45; and to know that cardiovascular diseases and stroke are largely preventable. Risks can be lowered by adhering to what we call Life&#39;s Simple 7: not smoking, being physically active, maintaining a healthy body weight, eating a healthy diet, controlling blood pressure, controlling cholesterol and controlling blood sugar.</p></div>       
+
+<div id="flipFour">Our 2020 Goal</div>
+    <div id="panelFour"><p>We are working toward improving the cardiovascular health of all Americans by 20 percent, and reducing deaths from cardiovascular diseases and stroke by 20 percent, all by the year 2020.</p></div></div>
+
+        <br><br><div class="redtext">For more information, visit heart.org or call 1-800-AHA-USA1.</div>
+         
+                <br><br><br><footer>
+        <div class="rightfooter"><p><b>Address</b>
+                                    <br>7272 Greenville Ave.
+                                    <br>Dallas, TX 75231</p>
+                                </div>
+        <div class="leftfooter"><p><b>Customer Service</b>
+                                    <br>1-800-AHA-USA-1
+                                    <br>1-800-242-8721
+                                    <br>1-888-474-VIVE</p></div>
+        </footer>
+    </div>
+
+    
+    <script>
+        $(document).ready(function () {
+
+            $.fn.openToggle = function () {
+                $(".top-nav").toggleClass("open");
+                $(".menu-toggle").toggleClass("open");
+            }
+
+            console.log("Geronimo!");
+
+            $(".menu-toggle").click(function () {
+                $.fn.openToggle();
+            });
+
+            $(".menu-item").click(function () {
+                $.fn.openToggle();
+            });
+
+            $(".closer").click(function () {
+                $.fn.openToggle();
+            });
+
+        });
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panelOne").slideToggle("slow");
+    });
+});
+
+$(document).ready(function(){
+    $("#flipTwo").click(function(){
+        $("#panelTwo").slideToggle("slow");
+    });
+});
+
+$(document).ready(function(){
+    $("#flipThree").click(function(){
+        $("#panelThree").slideToggle("slow");
+    });
+});
+    $(document).ready(function(){
+    $("#flipFour").click(function(){
+        $("#panelFour").slideToggle("slow");
+    });
+});
+    
+</script>
+</body>
+</html>
